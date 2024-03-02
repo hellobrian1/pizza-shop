@@ -4,16 +4,19 @@ public class ChicagoPizzaIngredientFactory
 	implements PizzaIngredientFactory 
 {
 
-	public Dough createDough() {
-		return new ThickCrustDough();
+	public Dough[] createDough() {
+		Dough dough[] = { new ThickCrustDough() };
+		return dough;
 	}
 
-	public Sauce createSauce() {
-		return new PlumTomatoSauce();
+	public Sauce[] createSauce() {
+		Sauce sauce[] = { new PlumTomatoSauce() };
+		return sauce;
 	}
 
-	public Cheese createCheese() {
-		return new MozzarellaCheese();
+	public Cheese[] createCheese() {
+		Cheese cheese[] = { new MozzarellaCheese() };
+		return cheese;
 	}
 
 	public Veggies[] createVeggies() {
@@ -23,11 +26,13 @@ public class ChicagoPizzaIngredientFactory
 		return veggies;
 	}
 
-	public Pepperoni createPepperoni() {
-		return new SlicedPepperoni();
+	public Pepperoni[] createPepperoni() {
+		Pepperoni pepperoni[] = { new SlicedPepperoni() };
+		return pepperoni;
 	}
 
-	public Clams createClam() {
-		return new FrozenClams();
+	public Clams[] createClam() {
+		Clams clams[] = { new FrozenClams() };
+		return clams;
 	}
 }
